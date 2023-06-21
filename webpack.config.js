@@ -11,10 +11,13 @@ const config = {
     static: path.resolve(__dirname, "dist"),
     hot:true,
   },
+  resolve:{
+    extensions: ['.js', '.jsx']
+  },
   module :{
     rules :[
         {
-            test: /\.js$/, // Apply the loader to JavaScript files
+            test: /\.jsx?$/, // Apply the loader to JavaScript files
             exclude: /node_modules/,
             use: {
               loader: "babel-loader",
@@ -22,7 +25,7 @@ const config = {
         },
           // Other rules for handling CSS, SCSS, etc.
         {
-            test: /\.s?css$/, // Apply the loader to CSS or scss both files
+            test: /\.(s([ac]|c))ss$/, // Apply the loader to CSS or scss both files
             use: [
               MiniCssExtractPlugin.loader, // Extracts CSS into separate files
               "css-loader", // Translates CSS into CommonJS
