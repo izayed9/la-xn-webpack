@@ -1,3 +1,5 @@
+import "./styles/index.scss"
+
 const evenShildRecpe={
     letherShiped:2,
     ironShiped:1,
