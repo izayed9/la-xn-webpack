@@ -4,4 +4,12 @@ const evenShildRecpe={
     refineMonoston: 4, 
 }
 
+
+const elvenCountletsRecipe ={
+    ...evenShildRecpe,
+    lether : 1,
+    refineMonoston: 4,
+
+}
 console.log(evenShildRecpe)
+console.log(elvenCountletsRecipe)
