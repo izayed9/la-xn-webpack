@@ -1,17 +1,6 @@
-import "./styles/index.scss"
+import {render} from 'react-dom'
 
-const evenShildRecpe={
-    letherShiped:2,
-    ironShiped:1,
-    refineMonoston: 4, 
-}
+import  App from './components/App'
 
+render(<App />, document.getElementById('root'))
 
-const elvenCountletsRecipe ={
-    ...evenShildRecpe,
-    lether : 1,
-    refineMonoston: 4,
-
-}
-console.log(evenShildRecpe)
-console.log(elvenCountletsRecipe)
